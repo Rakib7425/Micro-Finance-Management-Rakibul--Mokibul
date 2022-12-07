@@ -7,7 +7,6 @@
 
   <title>BBK | Micro Finance Management System</title>
 
-
   <?php
   session_start();
   if (!isset($_SESSION['login_id']))
