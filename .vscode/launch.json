@@ -5,6 +5,47 @@
      "version": "0.2.0",
      "configurations": [
           {
+               "name": "Launch Edge",
+               "request": "launch",
+               "type": "msedge",
+               "url": "http://localhost:8080",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "name": "Attach to Edge",
+               "port": 9222,
+               "request": "attach",
+               "type": "msedge",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "name": "Launch Chrome",
+               "request": "launch",
+               "type": "chrome",
+               "url": "http://localhost:8080",
+               "webRoot": "${workspaceFolder}"
+          },
+
+          {
+               "name": "Attach to Chrome",
+               "port": 9222,
+               "request": "attach",
+               "type": "chrome",
+               "webRoot": "${workspaceFolder}"
+          },
+          {
+               "args": [
+                    "--extensionDevelopmentPath=${workspaceFolder}"
+               ],
+               "name": "Launch Extension",
+               "outFiles": [
+                    "${workspaceFolder}/out/**/*.js"
+               ],
+               "preLaunchTask": "npm",
+               "request": "launch",
+               "type": "extensionHost"
+          },
+          {
                "name": "Listen for Xdebug",
                "type": "php",
                "request": "launch",
