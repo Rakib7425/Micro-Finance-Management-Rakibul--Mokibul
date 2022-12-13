@@ -77,7 +77,7 @@ if (isset($_GET['id'])) {
 					alert_toast("Payment data successfully saved.", "success");
 					setTimeout(function(e) {
 						location.reload()
-					}, 1500)
+					}, 250)
 				}
 			}
 		})

@@ -295,7 +295,10 @@ class Action
 	// todo 
 	function delete_user(){
 		extract($_POST);
-		$delete = $this->db->query("DELETE FROM user where id = " . $id);
+		// $delete = $this->db->query("DELETE FROM user where id = " . $id);
+		$delete = $this->db->query("DELETE FROM `users` WHERE `users`.`id` = " . $id);
+		
+			// ? DELETE FROM `users` WHERE `users`.`id` = 22
 		if ($delete)
 			return 1;
 	}

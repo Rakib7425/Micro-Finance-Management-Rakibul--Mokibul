@@ -158,7 +158,7 @@
 					alert_toast("Loan successfully deleted", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				}
 			}

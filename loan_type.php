@@ -116,13 +116,13 @@
 					alert_toast("Data successfully added", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				} else if (resp == 2) {
 					alert_toast("Data successfully updated", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				}
 			}
@@ -165,7 +165,7 @@
 					alert_toast("Data successfully deleted", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				}
 			}

@@ -45,7 +45,7 @@ foreach($user->fetch_array() as $k =>$v){
 					alert_toast("Data successfully saved",'success')
 					setTimeout(function(){
 						location.reload()
-					},1500)
+					},250)
 				}
 			}
 		})

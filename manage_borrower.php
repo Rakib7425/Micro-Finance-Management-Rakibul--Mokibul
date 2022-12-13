@@ -74,7 +74,7 @@ if(isset($_GET['id'])){
 	 				alert_toast("Borrower data successfully saved.","success");
 	 				setTimeout(function(e){
 	 					location.reload()
-	 				},1500)
+	 				},250)
 	 			}
 	 		}
 	 	})

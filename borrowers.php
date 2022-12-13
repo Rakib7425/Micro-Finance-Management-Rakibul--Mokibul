@@ -100,7 +100,7 @@
 					alert_toast("borrower successfully deleted", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				}
 			}

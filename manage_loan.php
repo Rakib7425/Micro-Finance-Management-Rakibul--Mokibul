@@ -149,7 +149,7 @@ foreach($qry->fetch_array() as $k => $v){
 					alert_toast("Loan Data successfully saved.","success")
 					setTimeout(function(){
 						location.reload();
-					},1500)
+					},250)
 				}
 			}
 		})

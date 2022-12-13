@@ -54,11 +54,11 @@
 											</div>
 										</div> -->
 
-									<button class="btn btn-outline-primary btn-sm edit_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)"  data-id="<?php echo $row['id'] ?>"><i class="fa fa-edit"></i> </a> </button>
+										<button class="btn btn-outline-primary btn-sm edit_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"><i class="fa fa-edit"></i> </a> </button>
 
-									<button class="btn btn-outline-danger btn-sm delete_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)"  data-id="<?php echo $row['id'] ?>"> <i class="fa fa-trash"></i> </a> </button>
-								
-								</center>
+										<button class="btn btn-outline-danger btn-sm delete_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"> <i class="fa fa-trash"></i> </a> </button>
+
+									</center>
 								</td>
 							</tr>
 						<?php endwhile; ?>
@@ -93,7 +93,7 @@
 					alert_toast("Data successfully deleted", 'success')
 					setTimeout(function() {
 						location.reload()
-					}, 1500)
+					}, 250)
 
 				}
 			}
