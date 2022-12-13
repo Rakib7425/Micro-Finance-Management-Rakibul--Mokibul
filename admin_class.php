@@ -292,6 +292,7 @@ class Action
 			return 1;
 	}
 
+	// ?TODO---->
 	function delete_user(){
 		extract($_POST);
 		$delete = $this->db->query("DELETE FROM user where id = " . $id);
