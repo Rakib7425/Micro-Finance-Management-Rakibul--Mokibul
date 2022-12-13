@@ -41,18 +41,24 @@
 								</td>
 								<td>
 									<center>
-										<div class="btn-group">
+										<!-- <div class="btn-group">
 											<button type="button" class="btn btn-primary">Action</button>
 											<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 												<span class="sr-only">Toggle Dropdown</span>
 											</button>
 											<div class="dropdown-menu">
 												<a class="dropdown-item edit_user" href="javascript:void(0)" data-id='<?php echo $row['id'] ?>'>Edit</a>
+
 												<div class="dropdown-divider"></div>
 												<a class="dropdown-item delete_user" href="javascript:void(0)" data-id='<?php echo $row['id'] ?>'>Delete</a>
 											</div>
-										</div>
-									</center>
+										</div> -->
+
+									<button class="btn btn-outline-primary btn-sm edit_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)"  data-id="<?php echo $row['id'] ?>"><i class="fa fa-edit"></i> </a> </button>
+
+									<button class="btn btn-outline-danger btn-sm delete_user mx-1 my-2" type="button" <a class="dropdown-item edit_user" href="javascript:void(0)"  data-id="<?php echo $row['id'] ?>"> <i class="fa fa-trash"></i> </a> </button>
+								
+								</center>
 								</td>
 							</tr>
 						<?php endwhile; ?>

@@ -291,4 +291,11 @@ class Action
 		if ($delete)
 			return 1;
 	}
+
+	function delete_user(){
+		extract($_POST);
+		$delete = $this->db->query("DELETE FROM user where id = " . $id);
+		if ($delete)
+			return 1;
+	}
 }
