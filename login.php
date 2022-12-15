@@ -14,7 +14,7 @@
 
 // it should be changed  ( Uncomment this && Header files links also)
 
-// session_start();
+// session_start();   // ? For Checking Working or Not
 
 
 if(isset($_SESSION['login_id']))
@@ -67,7 +67,7 @@ header("location:index.php?page=home");
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 250px;
+    height: 200px;
     padding: .5em 0.7em;
     border-radius: 50% 50%;
     color: #000000b3;

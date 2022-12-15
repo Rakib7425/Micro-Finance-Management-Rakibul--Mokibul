@@ -154,7 +154,8 @@ class Action
 	function delete_loan_type()
 	{
 		extract($_POST);
-		$delete = $this->db->query("DELETE FROM loan_types where id = " . $id);
+		// $delete = $this->db->query("DELETE FROM loan_types where id = " . $id);
+		$delete = $this->db->query("DELETE FROM loan_types WHERE `loan_types`.`id` = . $id");
 		if ($delete)
 			return 1;
 	}
