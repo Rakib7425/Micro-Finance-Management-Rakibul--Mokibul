@@ -68,7 +68,7 @@
 								</td>
 								<td>
 
-									<p>Reference :<b><?php echo $row['ref_no'] ?></b></p>
+									<p>Loan A/C No.(Reference) :<b><?php echo $row['ref_no'] ?></b></p>
 									<p><small>Loan type :<b><?php echo $type_arr[$row['loan_type_id']] ?></small></b></p>
 									<p><small>Plan :<b><?php echo $plan_arr[$row['plan_id']]['plan'] ?></small></b></p>
 									<p><small>Amount :<b><?php echo $row['amount'] ?></small></b></p>

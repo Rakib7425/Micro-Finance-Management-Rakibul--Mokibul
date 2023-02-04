@@ -23,7 +23,7 @@
 					<thead>
 						<tr>
 							<th class="text-center">#</th>
-							<th class="text-center">Loan Reference No</th>
+							<th class="text-center">Loan A/C No.(Reference) :</th>
 							<th class="text-center">Payee</th>
 							<th class="text-center">Amount</th>
 							<th class="text-center">Penalty</th>
