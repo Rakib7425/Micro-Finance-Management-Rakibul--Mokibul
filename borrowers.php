@@ -46,7 +46,7 @@
 
 								</td>
 								<!-- <td class="">None</td>
-						 	<td class="">N/A</td> -->
+						 		<td class="">N/A</td> -->
 								<td class="text-center">
 									<button class="btn btn-outline-primary btn-sm edit_borrower" type="button" data-id="<?php echo $row['id'] ?>"><i class="fa fa-edit"></i></button>
 									<button class="btn btn-outline-danger btn-sm delete_borrower" type="button" data-id="<?php echo $row['id'] ?>"><i class="fa fa-trash"></i></button>

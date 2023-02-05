@@ -1,9 +1,9 @@
 <?php include 'db_connect.php' ?>
-<?php 
+<?php
 
-if(isset($_GET['id'])){
-	$qry = $conn->query("SELECT * FROM borrowers where id=".$_GET['id']);
-	foreach($qry->fetch_array() as $k => $val){
+if (isset($_GET['id'])) {
+	$qry = $conn->query("SELECT * FROM borrowers where id=" . $_GET['id']);
+	foreach ($qry->fetch_array() as $k => $val) {
 		$$k = $val;
 	}
 }
@@ -35,8 +35,8 @@ if(isset($_GET['id'])){
 			</div>
 			<div class="row form-group">
 				<div class="col-md-6">
-							<label for="">Address</label>
-							<textarea name="address" id="" cols="30" rows="2" class="form-control" required=""><?php echo isset($address) ? $address : '' ?></textarea>
+					<label for="">Address</label>
+					<textarea name="address" id="" cols="30" rows="2" class="form-control" required=""><?php echo isset($address) ? $address : '' ?></textarea>
 				</div>
 				<div class="col-md-5">
 					<div class="">
@@ -47,8 +47,8 @@ if(isset($_GET['id'])){
 			</div>
 			<div class="row form-group">
 				<div class="col-md-6">
-							<label for="">Email</label>
-							<input type="email" class="form-control" name="email" value="<?php echo isset($email) ? $email : '' ?>">
+					<label for="">Email</label>
+					<input type="email" class="form-control" name="email" value="<?php echo isset($email) ? $email : '' ?>">
 				</div>
 				<div class="col-md-5">
 					<div class="">
@@ -62,21 +62,21 @@ if(isset($_GET['id'])){
 </div>
 
 <script>
-	 $('#manage-borrower').submit(function(e){
-	 	e.preventDefault()
-	 	start_load()
-	 	$.ajax({
-	 		url:'ajax.php?action=save_borrower',
-	 		method:'POST',
-	 		data:$(this).serialize(),
-	 		success:function(resp){
-	 			if(resp == 1){
-	 				alert_toast("Borrower data successfully saved.","success");
-	 				setTimeout(function(e){
-	 					location.reload()
-	 				},250)
-	 			}
-	 		}
-	 	})
-	 })
+	$('#manage-borrower').submit(function(e) {
+		e.preventDefault()
+		start_load()
+		$.ajax({
+			url: 'ajax.php?action=save_borrower',
+			method: 'POST',
+			data: $(this).serialize(),
+			success: function(resp) {
+				if (resp == 1) {
+					alert_toast("Borrower data successfully saved.", "success");
+					setTimeout(function(e) {
+						location.reload()
+					}, 250)
+				}
+			}
+		})
+	})
 </script>

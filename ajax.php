@@ -4,94 +4,94 @@ $action = $_GET['action'];
 include 'admin_class.php';
 $crud = new Action();
 
-if($action == 'login'){
+if ($action == 'login') {
 	$login = $crud->login();
-	if($login)
+	if ($login)
 		echo $login;
 }
-if($action == 'login2'){
+if ($action == 'login2') {
 	$login = $crud->login2();
-	if($login)
+	if ($login)
 		echo $login;
 }
-if($action == 'logout'){
+if ($action == 'logout') {
 	$logout = $crud->logout();
-	if($logout)
+	if ($logout)
 		echo $logout;
 }
-if($action == 'logout2'){
+if ($action == 'logout2') {
 	$logout = $crud->logout2();
-	if($logout)
+	if ($logout)
 		echo $logout;
 }
-if($action == 'save_user'){
+if ($action == 'save_user') {
 	$save = $crud->save_user();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == 'delete_user'){
+if ($action == 'delete_user') {
 	$save = $crud->delete_user();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == 'signup'){
+if ($action == 'signup') {
 	$save = $crud->signup();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "save_settings"){
+if ($action == "save_settings") {
 	$save = $crud->save_settings();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "save_loan_type"){
+if ($action == "save_loan_type") {
 	$save = $crud->save_loan_type();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "delete_loan_type"){
+if ($action == "delete_loan_type") {
 	$save = $crud->delete_loan_type();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "save_plan"){
+if ($action == "save_plan") {
 	$save = $crud->save_plan();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "delete_plan"){
+if ($action == "delete_plan") {
 	$save = $crud->delete_plan();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "save_borrower"){
+if ($action == "save_borrower") {
 	$save = $crud->save_borrower();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "delete_borrower"){
+if ($action == "delete_borrower") {
 	$save = $crud->delete_borrower();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "save_loan"){
+if ($action == "save_loan") {
 	$save = $crud->save_loan();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "delete_loan"){
+if ($action == "delete_loan") {
 	$save = $crud->delete_loan();
-	if($save)
+	if ($save)
 		echo $save;
 }
 
-if($action == "save_payment"){
+if ($action == "save_payment") {
 	$save = $crud->save_payment();
-	if($save)
+	if ($save)
 		echo $save;
 }
-if($action == "delete_payment"){
+if ($action == "delete_payment") {
 	$save = $crud->delete_payment();
-	if($save)
+	if ($save)
 		echo $save;
 }
