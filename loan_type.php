@@ -158,7 +158,7 @@
 	function delete_ltype($id) {
 		start_load()
 		$.ajax({
-			url: 'ajax.php?action=delete_loan-type',
+			url: 'ajax.php?action=delete_loan_type',
 			method: 'POST',
 			data: {
 				id: $id
