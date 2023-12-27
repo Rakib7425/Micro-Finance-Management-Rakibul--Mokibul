@@ -112,13 +112,19 @@
 					<form id="login-form">
 						<div class="form-group">
 							<label for="username" class="control-label">Username</label>
-							<input type="text" id="username" name="username" class="form-control">
+							<input type="text" id="username" name="username" class="form-control" placeholder="username - rakib@bbkc.com">
+							<!-- value="rakib@bbkc.com" -->
 						</div>
 						<div class="form-group">
 							<label for="password" class="control-label">Password</label>
-							<input type="password" id="password" name="password" class="form-control">
+							<input type="password" id="password" name="password" class="form-control" placeholder="password - rakib@bbkc.com">
+							<!-- value="rakib@bbkc.com" -->
 						</div>
 						<center><button class="btn-sm btn-block btn-wave col-md-4 btn-warning">Login</button></center>
+						<div style="margin-top:30px">
+							<span>Username- rakib@bbkc.com</span> <br>
+							<span>Password- rakib@bbkc.com</span>
+						</div>
 					</form>
 				</div>
 			</div>
